@@ -12,18 +12,27 @@
     </head>
     <body class="bgimg">
         <div class="buttons-placement">
-            <!-- <div class="input-group"> -->
-                <div class="input-group-prepend">
-                    <div class="input-group-text">
-                    <input type="radio" aria-label="Radio button for following text input" id="huey" name="drone" value="huey" checked>
-                    <label for="huey">Huey</label>
-                    <input type="radio" aria-label="Radio button for following text input" id="dewey" name="drone" value="dewey">
-                    <label for="dewey">Dewey</label>
+            <div class="form-group">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="team1" value="team1">
+                        <label class="form-check-label" for="Team1">
+                            Team 1
+                        </label>
                     </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="team2" value="team2">
+                        <label class="form-check-label" for="Team2">
+                            Team 2
+                        </label>
+                    </div>
+            </div>
+            <div class="button-Inputs">
+                <div class="form-group">
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter Pin">
                 </div>
-            <!-- </div> -->
-            <button type="button" class="btn btn-primary btn-lg">Join Room</button>
-            <button type="button" class="btn btn-primary btn-lg">Create Room</button>
+                <button type="button" class="btn btn-primary btn-lg">Join Room</button>
+            </div>
+        
         </div>
     </body>
 </html>

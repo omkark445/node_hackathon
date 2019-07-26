@@ -18,12 +18,24 @@ body, html {
 }
 
 .buttons-placement {
-    text-align: center;
+    /* text-align: center;
     vertical-align: top;
     padding-bottom: 60px;
     position: absolute;
     right: 0;
     bottom: 40px;
     left: 0;
-    width: 100%;
+    width: 100%; */
+    width: 500px;
+    margin: 0;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.button-Inputs {
+
 }
