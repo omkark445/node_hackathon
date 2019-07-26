@@ -1,4 +1,29 @@
-body {
-    background: #3f3f3f;
-    color: #fff;
+body, html {
+    height: 100%;
+}
+
+
+.bgimg {
+    background-image: url('./../images/GameStart.png');
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 900px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width:1200px;
+  display: table
+}
+
+.buttons-placement {
+    text-align: center;
+    vertical-align: top;
+    padding-bottom: 60px;
+    position: absolute;
+    right: 0;
+    bottom: 40px;
+    left: 0;
+    width: 100%;
 }

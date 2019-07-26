@@ -1,13 +1,14 @@
 const http = require('http');
 const path = require('path');
 const fs = require('fs');
-const io = require('socket.io')(3000);
-
-io.on('connection', socket => {
-    socket.emit('message', 'howdy');
-})
+const express = require('express');
+var app = express();
 
 const server = http.createServer((req, res) => {
+    //Images
+    var publicDir = require('path').join(__dirname,'/public');
+    app.use(express.static(publicDir));
+    app.use(express.static(__dirname + '/node_modules/bootstrap/dist'));
     // Build File Path
     let filePath = path.join(__dirname, 
         'public', 
