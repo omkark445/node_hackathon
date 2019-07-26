@@ -3,6 +3,7 @@ const path = require('path');
 const fs = require('fs');
 const express = require('express');
 var app = express();
+// var server1 = require('http').createServer(app);
 
 const server = http.createServer((req, res) => {
     //Images
@@ -70,4 +71,13 @@ const PORT = process.env.PORT || 5000;
 
 server.listen(PORT, () => {
     console.log(`Server Running on Port ${PORT}`);
+});
+
+const io = require('socket.io').listen(server);
+
+io.sockets.on('connection', function(socket) {
+    
+    users[socket.id] = socket;
+
+console.log(users.length);
 })
