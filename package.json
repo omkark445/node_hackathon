@@ -13,7 +13,8 @@
     "bootstrap": "^4.3.1",
     "express": "^4.17.1",
     "socket.io": "^2.2.0",
-    "uuid": "^3.3.2"
+    "uuid": "^3.3.2",
+    "websocket": "^1.0.29"
   },
   "devDependencies": {
     "nodemon": "^1.19.1"

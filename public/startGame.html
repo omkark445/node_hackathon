@@ -2,21 +2,29 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Index Page</title>
+        <title>Join Room</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./css/style.css">
-        <script defer src="./scripts/script.js"></script>
         <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="/socket.io/socket.io.js"></script>
     </head>
     <body class="bgimg">
-        <div >
-            <div class="buttons-placement">
-                <button type="button" class="btn btn-primary btn-lg" id="joinRoom"><a href="/joinRoom.html">Join Room</a></button>                
-                <button type="button" class="btn btn-primary btn-lg" id="createRoom"><a href="/startGame.html">Create Room</a></button>
+        <div class="buttons-placement">
+            <div class="form-group">
+                    <p>Players Joined : </p>
+                    <span class="blinking">3</span>
             </div>
+            <div class="button-Inputs">
+                <button type="button" class="btn btn-primary btn-lg"><a href="/play.html">Start Game</a></button>
+            </div>
+        
         </div>
     </body>
 </html>
+<script>
+    var socket = io.connect();
+    socket.emit('new-user', 'pravesh');
+</script>

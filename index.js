@@ -80,4 +80,4 @@ io.sockets.on('connection', function(socket) {
     users[socket.id] = socket;
 
 console.log(users.length);
-})
+});
