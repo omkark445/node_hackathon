@@ -4,6 +4,7 @@ const fs = require('fs');
 const express = require('express');
 var app = express();
 // var server1 = require('http').createServer(app);
+var users=[];
 
 const server = http.createServer((req, res) => {
     //Images
